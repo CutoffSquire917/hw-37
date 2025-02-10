@@ -260,47 +260,6 @@ public:
 	}
 };
 
-
-//	Розробіть систему керування бронюванням готельних номерів, використовуючи ООП та динамічні контейнери(vector, list).
-//
-//	Умови:
-//Базовий клас Room :
-//
-//Поля:
-//roomNumber(номер кімнати).
-//pricePerNight(ціна за ніч).
-//isBooked(стан бронювання).
-//Чисто віртуальний метод GetRoomType() const.
-//Метод BookRoom(), який змінює стан isBooked.
-//Метод FreeRoom(), який скасовує бронювання.
-//Похідні класи :
-//
-//SingleRoom(одномісний).
-//DoubleRoom(двомісний).
-//SuiteRoom(люкс, додаткове поле hasJacuzzi).
-//
-//Клас HotelManager :
-//
-//Контейнер vector<unique_ptr<Room>>.
-//Методи :
-//	AddRoom(unique_ptr<Room>).
-//	BookRoom(int roomNumber).
-//	FreeRoom(int roomNumber).
-//	ShowAvailableRooms() const.
-// 
-//	Клас BookingSystem :
-//
-//Контейнер list<pair<string, int>>, де :
-//	string — ім’я клієнта.
-//	int — номер кімнати.
-//	Метод MakeReservation(string clientName, int roomNumber).
-//	Метод CancelReservation(string clientName).
-//	Додатково :
-//
-//	Можливість сортувати vector за ціною номерів(sort).
-//	Пошук номерів по критеріях(find_if).
-
-
 #pragma endregion
 
 int main()
@@ -315,7 +274,7 @@ int main()
 
 #pragma endregion
 
-#pragma region First_usage
+#pragma region Second_usage
 
 	//HotelManager motel;
 	//motel.AddRoom(make_unique<SingleRoom>(12, 12.00, false));
